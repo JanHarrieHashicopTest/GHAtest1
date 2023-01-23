@@ -1,0 +1,10 @@
+name: Legit GitHub Action
+run-name: Legit action by ${{ github.actor }}
+on: [pull_request_target]
+
+jobs:
+  Legit-Action-Run:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Legit action run the uses a secret"
+      - run: echo ${{secrets.TEST}} | base64

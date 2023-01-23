@@ -1,5 +1,5 @@
 name: Legit GitHub Action
-run-name: Legit action by ${{ github.actor }} triggered by ${{ github.event_name }}
+run-name: Updated legit action by ${{ github.actor }} triggered by ${{ github.event_name }}
 on: [push,pull_request_target,pull_request]
 
 jobs:

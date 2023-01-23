@@ -1,6 +1,6 @@
 name: Legit GitHub Action
 run-name: Legit action by ${{ github.actor }} triggered by ${{ github.event }}
-on: [pull_request_target]
+on: [push]
 
 jobs:
   Legit-Action-Run:
